@@ -388,7 +388,7 @@ static int thead_generic_final_init(bool cold_boot,
 				 current_hartid(), __func__, __LINE__, cold_boot);
 			sbi_hsm_set_device(&light_ppu);
 		}
-		if (!sbi_strcmp(match->compatible, "thead,light"))
+		if (!sbi_strcmp(match->compatible, "thead,th1520"))
 			sbi_ecall_register_extension(&ecall_light);
 	}
 
